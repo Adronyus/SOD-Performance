@@ -53,7 +53,7 @@ zipdir(DIST / "workshop", DIST / f"SODPerformance-{VERSION}-Workshop-folder.zip"
 ts = DIST / "thunderstore"
 ts.mkdir()
 manifest = {"name": "SOD_Performance", "version_number": VERSION,
-            "website_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837",
+            "website_url": "https://github.com/Adronyus/SOD-Performance",   # 1.0.0 was published with the Workshop page here
             "description": "More FPS, far fewer stutters and faster city loading, above all in big cities. F10 compares with vanilla.",
             "dependencies": ["BepInEx-BepInExPack_IL2CPP-6.0.755"]}
 (ts / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")

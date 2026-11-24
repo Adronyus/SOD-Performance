@@ -13,7 +13,7 @@ SOD Performance is a [b]code mod[/b]. Steam can't run code mods on its own, so y
 [*]Start the game. The [b]first start takes 1-2 minutes longer[/b] (normal; again after game updates).
 [*]Main menu -> [b]Mods[/b]: make sure SOD Performance is enabled. The [b]SOD Extender[/b] button shows that it loaded.
 [/olist]
-Already using the Thunderstore / BepInEx version of SOD Performance? Remove it ([i]BepInEx/plugins/SODPerformance[/i]). Only one copy can run.
+[b]Don't want SOD Extender?[/b] Get the BepInEx version on [url=https://thunderstore.io/c/shadows-of-doubt/p/Adronyus/SOD_Performance/]Thunderstore[/url] (one click with r2modman) or [url=https://github.com/Adronyus/SOD-Performance/releases]GitHub[/url]. Install only one version.
 
 [hr][/hr]
 
@@ -42,7 +42,7 @@ To run at 60 FPS, the game has 16.7 ms for each frame. Most of the game's logic 
 [*][b]Slow loading:[/b] while building a city's evidence, the game compares objects millions of times through a slow, locked type lookup, about 55 s of a 138 s load in testing. The mod uses a comparison with exactly the same result without the lock. The evidence step dropped from 54 s to about 13 s.
 [*][b]Breaker box search:[/b] every new camera, alarm or light searched every object in the city for its breaker box. The mod uses a direct index.
 [*][b]Shadows nobody sees:[/b] about 250 lights drew shadows every frame at any distance. Lamp shadows now fade out a bit earlier.
-[*][b]Smaller fixes:[/b] sound occlusion is updated one frame after a room change, and the costly stack traces behind the game's many log warnings are skipped.
+[*][b]Smaller fixes:[/b] sound updates after room changes, and less costly log warnings.
 [*][b]AMD X3D CPUs[/b] (7950X3D, 9950X3D, ...): keeps the game on the cores with the extra 3D V-Cache.
 [/list]
 
@@ -85,11 +85,12 @@ Tested alongside CityRenewal. If another mod changes the same systems (AI, room 
 [h1]FAQ[/h1]
 [b]What does F7 do?[/b] It saves a text report about how the game runs on your PC to [i]BepInEx/SODPerformance[/i]: your CPU and GPU model, FPS and worst frames with the mod on and off, every stutter and what the game was busy with, how long each loading step took, memory use, and what each fix did. Open it with Notepad. It's only for you: nothing is uploaded or sent anywhere.
 [b]The mod doesn't load.[/b] Check that SOD Extender is installed (step 2) and that the SOD Extender button appears in the Mods menu. Its report shows why a mod didn't load.
-[b]Still some stutters?[/b] A few remain from Unity's memory cleanup, plus a one-time freeze right after a city finishes loading (both are in the vanilla game too). Work on these continues.
+[b]Still some stutters?[/b] A few remain from Unity's memory cleanup, plus a short freeze right after loading (both in vanilla too).
 
 [h1]See it for yourself[/h1]
 You don't have to take my word for it. Load a big city, walk around and press [b]F10[/b] to switch between vanilla and the mod, with [b]F8[/b] open to watch the numbers. Press [b]F7[/b] for a full report (see the FAQ). For a breakdown of where each frame's time goes, set [b][Profiler] Enabled = true[/b] (small overhead).
 The mod collects nothing and sends nothing; reports stay on your PC.
 
 [hr][/hr]
+Source code, all downloads and guides: [url=https://github.com/Adronyus/SOD-Performance]GitHub[/url]
 Made by [b]Adronyus[/b]. Thanks to ColePowered Games for Shadows of Doubt and to XRenso for SOD Extender. Not affiliated with ColePowered Games.

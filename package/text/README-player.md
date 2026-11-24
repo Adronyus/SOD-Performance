@@ -1,5 +1,7 @@
 # SOD Performance
 
+[Source code & all downloads on GitHub](https://github.com/Adronyus/SOD-Performance) · [Steam Workshop version](https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837) · [How it works](https://github.com/Adronyus/SOD-Performance/blob/main/docs/HOW-IT-WORKS.md)
+
 **Shadows of Doubt, but smooth.** Higher FPS, far fewer stutters and faster city loading, above all in big cities.
 The game itself stays exactly the same: same city, same citizens, same rules. Only the way the work is done changes.
 
@@ -17,7 +19,7 @@ Your results depend on your PC and your city, but **the bigger the city, the big
 
 ## Install
 - **Thunderstore (r2modman / Thunderstore Mod Manager):** click Install. BepInEx is installed for you.
-- **Manual:** install [BepInExPack IL2CPP](https://thunderstore.io/c/shadows-of-doubt/p/BepInEx/BepInExPack_IL2CPP/) into the game folder and start the game once. Then put `SODPerformance.dll` and `sodsampler.native` into `BepInEx/plugins/SODPerformance/`.
+- **Manual:** install [BepInExPack IL2CPP](https://thunderstore.io/c/shadows-of-doubt/p/BepInEx/BepInExPack_IL2CPP/) into the game folder and start the game once. Then download `SODPerformance-1.0.0-BepInEx.zip` from [GitHub Releases](https://github.com/Adronyus/SOD-Performance/releases) and unzip it into the game folder (files go to `BepInEx/plugins/SODPerformance/`).
 - **Steam Workshop:** there is also a [Workshop version](https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837) (it needs SOD Extender). Use only one: if two copies are installed, only the first one runs.
 
 ## Why the game stutters
@@ -73,4 +75,4 @@ To run at 60 FPS, the game has 16.7 ms for each frame. Most of its logic (citize
 **Privacy:** the mod collects nothing and sends nothing.
 
 ## Licence
-MIT, see `LICENSE`. Made by **Adronyus**. Thanks to ColePowered Games for Shadows of Doubt. Not affiliated with ColePowered Games.
+MIT, see `LICENSE`. Source code: [github.com/Adronyus/SOD-Performance](https://github.com/Adronyus/SOD-Performance). Made by **Adronyus**. Thanks to ColePowered Games for Shadows of Doubt. Not affiliated with ColePowered Games.
