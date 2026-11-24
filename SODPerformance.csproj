@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="GameReferences.props" />
+  <!--
+    SOD Performance - BepInEx 6 (be.755) Unity IL2CPP plugin for Shadows of Doubt.
+    Builds against the game's own BepInEx/core, BepInEx/interop and BepInEx's bundled .NET 6 runtime.
+    Set GameDir to your dev copy (Windows default below) or pass -p:GameDir=... on the command line.
+  -->
+  <PropertyGroup>
+    <AssemblyName>SODPerformance</AssemblyName>
+    <RootNamespace>SODPerformance</RootNamespace>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Sub-projects (Workshop edition, author-only publisher) live in their own folders. -->
+    <Compile Remove="workshop/**;publisher/**;native/**;package/**" />
+  </ItemGroup>
+</Project>

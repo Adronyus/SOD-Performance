@@ -1,0 +1,55 @@
+<Project>
+  <!-- Shared by SODPerformance.csproj, workshop/ and publisher/: compile against the game's own runtime, BepInEx and interop DLLs. -->
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>none</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoStdLib>true</NoStdLib>
+    <!-- Pass your game folder: dotnet build -p:GameDir="C:\...\Shadows of Doubt" (it needs BepInEx 6 IL2CPP installed and run once). -->
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Shadows of Doubt</GameDir>
+    <BepInExDir>$(GameDir)\BepInEx</BepInExDir>
+    <DotnetDir>$(GameDir)\dotnet</DotnetDir>
+    <CoreDir Condition="'$(CoreDir)' == ''">$(BepInExDir)\core</CoreDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(DotnetDir)\System.Private.CoreLib.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Runtime.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\netstandard.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\mscorlib.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Collections.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Linq.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Runtime.InteropServices.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Runtime.Extensions.dll" Private="false" />
+    <Reference Include="$(DotnetDir)\System.Memory.dll" Private="false" />
+    <Reference Include="$(CoreDir)\BepInEx.Core.dll" Private="false" />
+    <Reference Include="$(CoreDir)\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="$(CoreDir)\BepInEx.Unity.Common.dll" Private="false" />
+    <Reference Include="$(CoreDir)\0Harmony.dll" Private="false" />
+    <Reference Include="$(CoreDir)\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(CoreDir)\Il2CppInterop.Common.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Il2Cppmscorlib.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Il2CppSystem.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Il2CppSystem.Core.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.PhysicsModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.AnimationModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.AudioModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Unity.RenderPipelines.HighDefinition.Runtime.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Unity.RenderPipelines.Core.Runtime.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="$(BepInExDir)\interop\Rewired_Core.dll" Private="false" />
+  </ItemGroup>
+</Project>

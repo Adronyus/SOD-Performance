@@ -1,0 +1,8 @@
+bin/
+obj/
+dist/
+workshop/bin/
+workshop/obj/
+native/*.dll
+.vs/
+*.user

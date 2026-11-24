@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../GameReferences.props" />
+  <!--
+    SOD Performance, Steam Workshop edition: the same code as the BepInEx plugin, built as one SOD Extender code mod
+    (no BepInEx plugin class, so the two DLLs never clash). Ship it in the Workshop folder's Code/ with sodsampler.native.
+    Build against SOD Extender 0.3.0: pass -p:ExtenderDll=...\BepInEx\plugins\SodExtender\core\SodExtender.dll
+  -->
+  <PropertyGroup>
+    <AssemblyName>SODPerformance.Workshop</AssemblyName>
+    <RootNamespace>SODPerformance</RootNamespace>
+    <Version>1.0.0</Version>
+    <DefineConstants>$(DefineConstants);WORKSHOP</DefineConstants>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ExtenderDll Condition="'$(ExtenderDll)' == ''">$(BepInExDir)\plugins\SodExtender\core\SodExtender.dll</ExtenderDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../src/**/*.cs" />
+    <Compile Include="WorkshopMod.cs" />
+    <Reference Include="$(ExtenderDll)" Private="false" />
+  </ItemGroup>
+</Project>
