@@ -8,6 +8,8 @@ Higher FPS, far fewer stutters and faster city loading, above all in big cities.
 <p align="center">
 <a href="https://thunderstore.io/c/shadows-of-doubt/p/Adronyus/SOD_Performance/">Thunderstore</a> ·
 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837">Steam Workshop</a> ·
+<a href="https://www.nexusmods.com/shadowsofdoubt/mods/67">Nexus Mods</a> ·
+<a href="https://mod.io/g/shadows-of-doubt/m/sod-performance">mod.io</a> ·
 <a href="../../releases">Downloads (Releases)</a> ·
 <a href="docs/HOW-IT-WORKS.md">How it works</a>
 </p>
@@ -36,8 +38,9 @@ There are two versions with **exactly the same fixes**. They differ only in how 
 | You use... | Get | Needs |
 |---|---|---|
 | r2modman / Thunderstore Mod Manager | [Thunderstore](https://thunderstore.io/c/shadows-of-doubt/p/Adronyus/SOD_Performance/) | nothing else (BepInEx comes automatically) |
-| BepInEx, installed by hand | `SODPerformance-1.0.0-BepInEx.zip` from [Releases](../../releases) | BepInEx 6 IL2CPP |
+| BepInEx, installed by hand | `SODPerformance-1.0.0-BepInEx.zip` from [Releases](../../releases) or [Nexus Mods](https://www.nexusmods.com/shadowsofdoubt/mods/67) | BepInEx 6 IL2CPP |
 | Steam Workshop | [Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837) | SOD Extender (one-time install) |
+| The game's mod.io menu | [mod.io page](https://mod.io/g/shadows-of-doubt/m/sod-performance) | SOD Extender (one-time install) |
 | SOD Extender, without Steam Workshop | `SODPerformance-1.0.0-Workshop-folder.zip` from [Releases](../../releases) | SOD Extender |
 
 If you're unsure: use **Thunderstore**. It's one click and sets up everything.

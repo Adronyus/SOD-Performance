@@ -13,7 +13,7 @@ SOD Performance is a [b]code mod[/b]. Steam can't run code mods on its own, so y
 [*]Start the game. The [b]first start takes 1-2 minutes longer[/b] (normal; again after game updates).
 [*]Main menu -> [b]Mods[/b]: make sure SOD Performance is enabled. The [b]SOD Extender[/b] button shows that it loaded.
 [/olist]
-[b]Don't want SOD Extender?[/b] Get the BepInEx version on [url=https://thunderstore.io/c/shadows-of-doubt/p/Adronyus/SOD_Performance/]Thunderstore[/url] (one click with r2modman) or [url=https://github.com/Adronyus/SOD-Performance/releases]GitHub[/url]. Install only one version.
+[b]Don't want SOD Extender?[/b] Get the BepInEx version on [url=https://thunderstore.io/c/shadows-of-doubt/p/Adronyus/SOD_Performance/]Thunderstore[/url] (one click with r2modman), [url=https://www.nexusmods.com/shadowsofdoubt/mods/67]Nexus Mods[/url] or [url=https://github.com/Adronyus/SOD-Performance/releases]GitHub[/url]. Install only one version.
 
 [hr][/hr]
 

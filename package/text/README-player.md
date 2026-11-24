@@ -1,6 +1,6 @@
 # SOD Performance
 
-[Source code & all downloads on GitHub](https://github.com/Adronyus/SOD-Performance) · [Steam Workshop version](https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837) · [How it works](https://github.com/Adronyus/SOD-Performance/blob/main/docs/HOW-IT-WORKS.md)
+[Source code & all downloads on GitHub](https://github.com/Adronyus/SOD-Performance) · [Steam Workshop version](https://steamcommunity.com/sharedfiles/filedetails/?id=3845007837) · [Nexus Mods](https://www.nexusmods.com/shadowsofdoubt/mods/67) · [How it works](https://github.com/Adronyus/SOD-Performance/blob/main/docs/HOW-IT-WORKS.md)
 
 **Shadows of Doubt, but smooth.** Higher FPS, far fewer stutters and faster city loading, above all in big cities.
 The game itself stays exactly the same: same city, same citizens, same rules. Only the way the work is done changes.
